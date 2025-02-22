@@ -30,22 +30,32 @@ const CustomNavbar = () => {
         </Button>
         <Navbar.Toggle aria-controls="navbar-nav" onClick={handleMenuToggle} />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ml-auto">
-            <Link href="#about" passHref>
-              <Nav.Link>Sobre Mim</Nav.Link>
-            </Link>
-            <Link href="#education" passHref>
-              <Nav.Link>Formação</Nav.Link>
-            </Link>
-            <Link href="#skills" passHref>
-              <Nav.Link>Conhecimentos</Nav.Link>
-            </Link>
-            <Link href="#projects" passHref>
-              <Nav.Link>Projetos</Nav.Link>
-            </Link>
-            <Link href="#contact" passHref>
-              <Nav.Link>Contato</Nav.Link>
-            </Link>
+          <Nav className="ms-auto">
+            <Nav.Item>
+              <Link href="#about" passHref legacyBehavior>
+                <Nav.Link>Sobre Mim</Nav.Link>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link href="#education" passHref legacyBehavior>
+                <Nav.Link>Formação</Nav.Link>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link href="#skills" passHref legacyBehavior>
+                <Nav.Link>Conhecimentos</Nav.Link>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link href="#projects" passHref legacyBehavior>
+                <Nav.Link>Projetos</Nav.Link>
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link href="#contact" passHref legacyBehavior>
+                <Nav.Link>Contato</Nav.Link>
+              </Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
