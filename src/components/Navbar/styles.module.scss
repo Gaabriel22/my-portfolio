@@ -1,0 +1,24 @@
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar .themeToggle {
+    font-size: 1.2rem;
+  }
+}
